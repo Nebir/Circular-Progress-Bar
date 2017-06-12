@@ -113,7 +113,7 @@
         }
     };
 
-    $.fn.gmpc = function(methodOrOptions) {
+    $.fn.circularProgress = function(methodOrOptions) {
         if (methods[methodOrOptions]) {
             // Method found
             return methods[methodOrOptions].apply(this, Array.prototype.slice.call(arguments, 1));

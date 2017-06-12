@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    var progress_circle = $(".my-progress-bar").gmpc({
+    $(".my-progress-bar").circularProgress({
         line_width: 6,
         color: "#ccc",
-        starting_position: 25,
-        percent: 25,
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
         percentage: true,
         text: "More power behind every pixel"
-    }).gmpc('animate', 99, 3000);
+    }).circularProgress('animate', 99, 5000);
 });
